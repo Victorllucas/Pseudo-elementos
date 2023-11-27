@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de atividades</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1::before {
+        content: "🌟 "; /* Adiciona um emoji antes do texto do h1 */
+      }
+
+      p::after {
+        content: " - Até o dia 29/12"; /* Adiciona um texto após o conteúdo do parágrafo */
+        color: #888; /* Define a cor do texto do pseudo-elemento */
+      }
+
+      section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+      }
+
+      li::before {
+        content: "🔹"; /* Adiciona um emoji antes de cada item da lista */
+        color: #333;
+        font-size: 1.2em;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Atividades a serem entregues</h1>
+    </header>
+
+    <section>
+      <p>As seguintes atividades devem ser entregues pelo aluno:</p>
+
+      <h2>Lista de atividades</h2>
+      <ul>
+        <li>1 - Resumo do livro: Um garoto consumista na roça.</li>
+        <li>2 - Redação sobre o livro</li>
+        <li>
+          3 - Leitura e resumo dos capitulos de 1 a 4 do livro O principe.
+        </li>
+        <li>4 - Redação sobre a industrialização.</li>
+      </ul>
+    </section>
+  </body>
+</html>
